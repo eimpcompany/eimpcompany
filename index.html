@@ -8,7 +8,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>EIMPC-EAGLE INTERNATIONAL MODERN PROJECT COMPANY L.L.C</title>
+    <title translated >EIMPC-EAGLE INTERNATIONAL MODERN PROJECT COMPANY L.L.C</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/logo.png" />
     <!-- Bootstrap Icons-->
@@ -21,6 +21,9 @@
       href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700"
       rel="stylesheet"
     />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
       rel="stylesheet"
@@ -34,6 +37,11 @@
     <!-- Core theme CSS (includes Bootstrap)-->
 
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet">
+
+    <!--Translation Script-->
+    <!-- <script src="/i18nextify.min.js" id="i18nextify" fallbacklng="en"></script> -->
+
   </head>
 
   <body id="page-top">
@@ -42,9 +50,13 @@
       class="navbar navbar-expand-lg navbar-light fixed-top py-3"
       id="mainNav"
     >
+    <div class="mx-5">
+  <a i18next-key="languageSelect.en" href="/?lng=en" translated><span class="flag-icon flag-icon-us"></span></a><span>&nbsp;</span>
+  <a  i18next-key="languageSelect.ar" href="/?lng=ar" translated><span class="flag-icon flag-icon-ae"></span></a></div>
+ 
       <div class="container px-4 px-lg-5">
         <a class="navbar-brand" href="#page-top"
-          >EAGLE INTERNATIONAL MODERN PROJECT COMPANY L.L.C</a
+          ><span class="full-text" translated>EAGLE INTERNATIONAL MODERN PROJECT COMPANY L.L.C</span><span translated class="short-text">EIMPC L.L.C</span></a
         >
         <button
           class="navbar-toggler navbar-toggler-right"
@@ -63,7 +75,7 @@
               <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#about">About Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#products">Products</a>
@@ -78,8 +90,11 @@
               <a class="nav-link" href="#contact">Contact Us</a>
             </li>
           </ul>
+          
         </div>
+        
       </div>
+      
     </nav>
     <!-- Masthead-->
     <header class="masthead" id="home">
@@ -92,13 +107,7 @@
             <hr class="divider" />
           </div>
           <div class="col-lg-8 align-self-baseline">
-            <p class="text-white-75 mb-5">
-              Eagle International Company for Modern Projects is one of the
-              branches of Bin Sadoun Trading Company, which was established in
-              the UAE in 1978, Eagle International Company for Modern Projects
-              has specialized in metallic and non-metallic minerals and is known
-              for its calcium carbonate, barium sulfate, iron ore and other
-              minerals.
+            <p class="text-white-75 mb-5" i18next-key="intro" merged>Eagle International Company for Modern Projects is one of the branches of Bin Sadoun Trading Company, which was established in the UAE in 1978, Eagle International Company for Modern Projects has specialized in metallic and non-metallic minerals and is known for its calcium carbonate, barium sulfate, iron ore and other minerals.
             </p>
           </div>
         </div>
@@ -126,8 +135,8 @@
                 />
               </div>
               <div class="card-body text-center" style="overflow-x: auto">
-                <h4 class="card-title mb-3">Mission</h4>
-                <p class="card-text">
+                <h4 class="card-title h2 mb-5">Mission</h4>
+                <p class="card-text" i18next-key="overview1" id="MyID">
                   Together we can make a difference in everyday life. Put your
                   hand with us towards building the future.
                 </p>
@@ -148,8 +157,8 @@
                 />
               </div>
               <div class="card-body text-center" style="overflow-x: auto">
-                <h4 class="card-title h2 mb-2">Spirit</h4>
-                <p class="card-text">
+                <h4 class="card-title h2 mb-5">Spirit</h4>
+                <p class="card-text" i18next-key="overview2">
                   Our responsibility is to serve our valued customers, achieve
                   their satisfaction, and provide requirements with the highest
                   international standards.
@@ -171,8 +180,8 @@
                 />
               </div>
               <div class="card-body text-center" style="overflow-x: auto">
-                <h4 class="card-title h2 mb-2">Core Value</h4>
-                <p class="card-text">
+                <h4 class="card-title h2 mb-5">Core Value</h4>
+                <p class="card-text" i18next-key="overview3">
                   Our motto is distinguished from rest by credibility, passion,
                   seriousness, accuracy ad quality.
                 </p>
@@ -211,10 +220,7 @@
                     <ol>
                       <li>Oil wells exhortations</li>
                       <li>Acidizing method</li>
-                      <li>
-                        Treatment of limestone reservoirs as well as in sandy
-                        reservoirs
-                      </li>
+                      <li>Treatment of limestone reservoirs as well as in sandy reservoirs</li>
                     </ol>
                   </div>
                 </div>
@@ -295,9 +301,9 @@
           </div>
           <div class="product-item-description ms-auto">
             <div class="bg-faded p-5 rounded">
-              <p class="mb-0 w-100 text-center">
-                Calcium Carbonate - an inorganic compound with the chemical
-                formula CaCo3 neutral,<br />
+              <p class="mb-0 w-100 text-center" merged>
+                <span i18next-key="cc1">Calcium Carbonate - an inorganic compound with the chemical
+                formula CaCo3 neutral,</span><br />
                 almost insoluble in water, soluble in hydrocloric acid.<br />
                 It is white in color when it is pure.
               </p>
@@ -369,7 +375,7 @@
                   <div class="bg-faded p-5 rounded ml-2">
                     <ol>
                       <li>Improve product hardness</li>
-                      <li>Improve wear wesistance</li>
+                      <li>Improve wear resistance</li>
                       <li>Good acid and alkali resistance</li>
                       <li>Good radiation (X/Y ray)</li>
                     </ol>
@@ -400,14 +406,14 @@
           </div>
           <div class="product-item-description ms-auto">
             <div class="bg-faded p-5 rounded">
-              <p class="mb-0 w-100 text-center">
-                Barium Sulphate is a very important mineral with a hig
-                density.<br />
+              <p class="mb-0 w-100 text-center" i18next-key="bc1">
+                <span i18next-key="bc1">Barium Sulphate is a very important mineral with a hig
+                density.</span><br /><span i18next-key="bc2">
                 Barium Sulphate - A white and white light, light yellow and blue
-                barite powder with,<br />
+                barite powder with,</span><br /><span i18next-key="bc3" merge>
                 the chemical formula BaSo<sub>4</sub> - odorless, tasteless. It
                 is insoluble in organic solvent, acid or alkali hydroxide
-                solution.
+                solution.</span>
               </p>
             </div>
           </div>
@@ -471,6 +477,42 @@
                   data-bs-slide-to="5"
                   aria-label="Slide 6"
                 ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="6"
+                  aria-label="Slide 7"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="7"
+                  aria-label="Slide 8"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="8"
+                  aria-label="Slide 9"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="9"
+                  aria-label="Slide 10"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="10"
+                  aria-label="Slide 11"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="11"
+                  aria-label="Slide 12"
+                ></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="2000">
@@ -515,6 +557,48 @@
                     alt="..."
                   />
                 </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/img/portfolio/fullsize/7.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/img/portfolio/fullsize/8.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/img/portfolio/fullsize/9.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/img/portfolio/fullsize/10.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/img/portfolio/fullsize/11.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/img/portfolio/fullsize/12.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
               </div>
               <button
                 class="carousel-control-prev"
@@ -526,7 +610,7 @@
                   class="carousel-control-prev-icon"
                   aria-hidden="true"
                 ></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden" translated>Previous</span>
               </button>
               <button
                 class="carousel-control-next"
@@ -538,7 +622,7 @@
                   class="carousel-control-next-icon"
                   aria-hidden="true"
                 ></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden" translated>Next</span>
               </button>
             </div>
           </div>
@@ -550,7 +634,7 @@
       <div class="container px-4 px-lg-5 text-center">
         <h2 class="mb-4">Check out our profile for more information</h2>
         <a class="btn btn-light btn-xl" href="assets/new shk profile  2.pdf"
-          >Download Now!</a
+          >Download Now</a
         >
       </div>
     </section>
@@ -860,17 +944,19 @@
     </section>
 
     <!-- Contact-->
-    <section class="page-section" id="contact">
-      <div class="container px-4 px-lg-5">
+    <section class="page-section" id="contact"> 
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <h1 class="mb-5 text-center">Our Location</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3604.4298561732794!2d55.494854!3d25.390418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDIzJzI1LjUiTiA1NcKwMjknNDEuNSJF!5e0!3m2!1sen!2s!4v1668581870638!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="direction: 'rtl';"></iframe></div>
+      <div class="container px-4 px-lg-5 py-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-8 col-xl-6 text-center">
             <h2 class="mt-0">Let's Get In Touch!</h2>
             <hr class="divider" />
             <p class="text-muted mb-5">
-              If you have any questions? Send us a messages and we will get back
-              to you as soon as possible!
+              If you have any questions? Send us a messages and we will get back to you as soon as possible!
             </p>
-            <ul style="list-style: none">
+            <ul style="list-style: none" class="mb-5">
               <li>One day collection</li>
               <li>Submit solution about 3-5 days</li>
               <li>Reply and Deal</li>
@@ -878,23 +964,28 @@
             </ul>
           </div>
         </div>
-        <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5 my-5">
           <div class="col-lg-3 text-center mb-5 mb-lg-0">
-            <i class="bi-phone fs-2 mb-3 text-muted"></i>
+            <a href="https://wa.me/00971503653363"><img src="./assets/icons8-whatsapp-240.svg" width="40%" height="40%"> </a>
             <div>Mobile: +971503653363</div>
           </div>
           <div class="col-lg-3 text-center mb-5 mb-lg-0">
-            <i class="bi-telephone fs-2 mb-3 text-muted"></i>
-            <div>Tel: +971503653363</div>
+            <a href="https://wa.me/0096899261990"><img src="./assets/icons8-whatsapp-240.svg" width="40%" height="40%"> </a>
+
+            <div>Tel: +96899261990</div>
           </div>
           <div class="col-lg-3 text-center mb-5 mb-lg-0">
-            <i class="bi-envelope fs-2 mb-3 text-muted"></i>
-            <div>Email: aaa3653363@gmail.com</div>
+            <img src="./assets/icons8-gmail.svg" width="40%" height="40%">
+            <div>Email: <a href="mailto:aaa3653363@gmail.com" class="nav-link" style="color: inherit;">aaa3653363@gmail.com</a></div>
           </div>
           <div class="col-lg-3 text-center mb-5 mb-lg-0">
-            <i class="bi-envelope fs-2 mb-3 text-muted"></i>
-            <div>Email: rnaka46@gmail.com</div>
+
+            <img src="./assets/icons8-gmail.svg" width="40%" height="40%">
+            <div>Email: <a href="mailto:rnaka46@gmail.com" class="nav-link" style="color: inherit;">rnaka46@gmail.com</a></div>
           </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 text-center">
+          
         </div>
       </div>
     </section>
@@ -904,7 +995,7 @@
     <!-- Footer-->
     <footer class="bg-light py-5">
       <div class="container px-4 px-lg-5">
-        <div class="small text-center text-muted">
+        <div class="small text-center text-muted" translated>
           Copyright &copy; 2022 - EIMPC-EAGLE INTERNATIONAL MODERN PROJECT
           COMPANY L.L.C
         </div>
@@ -916,31 +1007,61 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <script>
-      // Get the button:
-      let mybutton = document.getElementById("myBtn");
+    <script src="js/i18next.js"></script>
+    <script src="./js/i18nextify.min.js" id="i18nextify"  fallbacklng="en" ></script>
+  
+ <script>
+      window.i18nextify.init({
+        // defaults that are set
+        autorun: true, // setting to false init will return an object with start function
+        ele: document.body, // pass in another element if you like to translate another html element
+        ignoreTags: ['SCRIPT'], // tags to ignore
 
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () {
-        scrollFunction();
-      };
+        // using keys instead of content as keys
+        keyAttr: 'i18next-key', // node attribute to use as key
+        ignoreWithoutKey: false, // set to true to only support nodes having a key
 
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
+        // per default not set
+        ignoreIds: ['ignoreMeId'],
+        ignoreClasses: ['ignoreMeClass'],
 
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-      }
+        // attributes to translate
+        translateAttributes: ['placeholder', 'title', 'alt', 'value#input.type=button', 'value#input.type=submit'],
+
+        // merging content (eg. a tags in p tags)
+        mergeTags: [], // tags to merge innerHtml to one key
+        inlineTags: [], // tags to inline (eg. a, span, abbr, ...)
+        ignoreInlineOn: [], // tags to ignore inlining tags under inlineTags
+
+        // cleanup for keys
+        cleanIndent: true, // removes indent, eg. if a p tag spans multiple lines
+        ignoreCleanIndentFor: ['PRE', 'CODE'], // ignores cleaning up of indent for those tags needing that extra spaceing
+        cleanWhitespace: true, // removes surrounding whitespace from key
+
+        namespace: false, // set a filename - default namespace will be translation
+        namespaceFromPath: false, // set true will use namepace based on window.location.pathname
+        // ns: ['common'] // -> only set if accessing more then one namepace
+
+        // + all options available in i18next
+       
+        
+      });
     </script>
+    <!-- <script>
+      window.i18nextify.init(
+        i18next.dir('ar')
+      );
+    </script> -->
+    <script>
+    window.i18nextify.i18next.on("languageChanged", function (c) {
+      // console.log(c, "..changed");
+      // window.i18nextify.forceRerender();
+      // x =  i18nextify.i18next.dir(c);
+      if(c=='ar'){
+        document.body.style.direction = "rtl";
+      }
+      });
+    </script>
+    
   </body>
 </html>
