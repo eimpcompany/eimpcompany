@@ -53,7 +53,8 @@
 
   <body id="page-top">
     <!-- Navigation-->
-    <nav
+    <div id="page-direction">
+          <nav
       class="navbar navbar-expand-lg navbar-light fixed-top py-3"
       id="mainNav"
     >
@@ -136,21 +137,20 @@
       <div class="container px-4 px-lg-5">
         <h2 class="text-center mt-0">Overview</h2>
         <hr class="divider" />
-        <div class="row pt-5 m-auto">
+        <div class="row pt-5 m-auto card-row">
           <div class="col-lg-4 col-md-6 pb-3">
-            <!-- Copy the content below until next comment -->
-            <div class="card card-custom bg-white border-white border-0">
+            <div class="card card-custom bg-white border-white border-0 overview-card">
               <div
-                class="card-custom-img"
-                style="background-image: url(./assets/card-img.jpg)"
+                class="card-custom-imgt"
+                style="background-image: url(./assets/mission.png)"
               ></div>
-              <div class="card-custom-avatar">
+              <!-- <div class="card-custom-avatar">
                 <img
                   class="img-fluid"
                   src="./assets/vbi-bullseye.PNG"
                   alt="Avatar"
                 />
-              </div>
+              </div> -->
               <div class="card-body text-center" style="overflow-x: auto">
                 <h4 class="card-title h2 mb-5">Mission</h4>
                 <p class="card-text" i18next-key="overview1" id="MyID">
@@ -161,18 +161,18 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 pb-3">
-            <div class="card card-custom bg-white border-white border-0">
+            <div class="card card-custom bg-white border-white border-0 overview-card">
               <div
-                class="card-custom-img"
-                style="background-image: url(./assets/card-img.jpg)"
+                class="card-custom-imgt"
+                style="background-image: url(./assets/spirit.png)"
               ></div>
-              <div class="card-custom-avatar">
+              <!-- <div class="card-custom-avatar">
                 <img
                   class="img-fluid"
                   src="./assets/bi-recycle.PNG"
                   alt="Avatar"
                 />
-              </div>
+              </div> -->
               <div class="card-body text-center" style="overflow-x: auto">
                 <h4 class="card-title h2 mb-5">Spirit</h4>
                 <p class="card-text" i18next-key="overview2">
@@ -184,18 +184,18 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 pb-3">
-            <div class="card card-custom bg-white border-white border-0">
+            <div class="card card-custom bg-white border-white border-0 overview-card">
               <div
-                class="card-custom-img"
-                style="background-image: url(./assets/card-img.jpg)"
+                class="card-custom-imgt"
+                style="background-image: url(./assets/corevalues.png)"
               ></div>
-              <div class="card-custom-avatar">
+              <!-- <div class="card-custom-avatar">
                 <img
                   class="img-fluid"
                   src="./assets/bi-check-all.PNG"
                   alt="Avatar"
                 />
-              </div>
+              </div> -->
               <div class="card-body text-center" style="overflow-x: auto">
                 <h4 class="card-title h2 mb-5">Core Value</h4>
                 <p class="card-text" i18next-key="overview3">
@@ -232,8 +232,7 @@
                 w-50
               />
               <div class="card-body mt-5">
-                <div class="product-item-description d-flex ms-auto">
-                  <div class="bg-faded p-3 rounded ml-2">
+                <div class="product-item-description bg-faded  rounded p-3">
                     <ol>
                       <li>Oil wells exhortations</li>
                       <li>Acidizing method</li>
@@ -242,7 +241,7 @@
                         reservoirs
                       </li>
                     </ol>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -253,14 +252,13 @@
                 alt="printingink"
               />
               <div class="card-body mt-5">
-                <div class="product-item-description d-flex">
-                  <div class="bg-faded p-3 rounded ml-2">
+                <div class="product-item-description bg-faded  rounded p-3">
                     <ol>
                       <li>Increase the volume</li>
                       <li>Good dispersity and transparency</li>
                       <li>Good gloss and cover</li>
                     </ol>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -271,14 +269,13 @@
                 alt="plastic"
               />
               <div class="card-body mt-5">
-                <div class="product-item-description d-flex">
-                  <div class="bg-faded p-3 rounded ml-2">
+                <div class="product-item-description bg-faded  rounded p-3">
                     <ol>
                       <li>Increase heat resistance</li>
                       <li>Improved stability</li>
                       <li>Enhance extinction effect</li>
                     </ol>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -289,14 +286,13 @@
                 alt="rubber"
               />
               <div class="card-body mt-5">
-                <div class="product-item-description d-flex">
-                  <div class="bg-faded p-3 rounded ml-2">
+                <div class="product-item-description bg-faded  rounded p-3">
                     <ol>
                       <li>Improve machineing performance</li>
                       <li>Effective harness regulation</li>
                       <li>Save cost</li>
                     </ol>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -307,14 +303,13 @@
                 alt="Paper"
               />
               <div class="card-body mt-5">
-                <div class="product-item-description d-flex">
-                  <div class="bg-faded p-3 rounded ml-2">
+                <div class="product-item-description bg-faded  rounded p-3">
                     <ol>
                       <li>Good brightness</li>
                       <li>Improve paper hardness</li>
                       <li>Easy to dehumidify and dry</li>
                     </ol>
-                  </div>
+              
                 </div>
               </div>
             </div>
@@ -356,14 +351,13 @@
                 width="100%"
               />
               <div class="card-body mt-5">
-                <div class="product-item-description d-flex ms-auto">
-                  <div class="bg-faded p-5 rounded ml-2">
+                <div class="product-item-description bg-faded  rounded p-3">
                     <ol>
                       <li>Improve Gloss</li>
                       <li>Improve Levening</li>
                       <li>Improve Compatibility</li>
                     </ol>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -375,14 +369,13 @@
                 w-50
               />
               <div class="card-body mt-5">
-                <div class="product-item-description d-flex ms-auto">
-                  <div class="bg-faded p-5 rounded ml-2">
+                <div class="product-item-description bg-faded  rounded p-3">
                     <ol>
                       <li>Save Production Cost</li>
                       <li>Improve Weather Resistance</li>
                       <li>Improve quality and liquidity</li>
                     </ol>
-                  </div>
+                
                 </div>
               </div>
             </div>
@@ -393,15 +386,14 @@
                 alt="paintcoating"
               />
               <div class="card-body mt-5">
-                <div class="product-item-description d-flex">
-                  <div class="bg-faded p-5 rounded ml-2">
+                <div class="product-item-description bg-faded  rounded p-3">
                     <ol>
                       <li>Improve product hardness</li>
                       <li>Improve wear resistance</li>
                       <li>Good acid and alkali resistance</li>
                       <li>Good radiation (X/Y ray)</li>
                     </ol>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -412,8 +404,7 @@
                 alt="oilgaswells"
               />
               <div class="card-body mt-5">
-                <div class="product-item-description d-flex">
-                  <div class="bg-faded p-5 rounded ml-2">
+                <div class="product-item-description bg-faded  rounded p-3">
                     <ol>
                       <li>Getting rid of reaction force when digging</li>
                       <li>Prevents explosions while digging</li>
@@ -422,7 +413,7 @@
                       <li>It makes the place to be dug easy to dig</li>
                     </ol>
                   </div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -993,7 +984,7 @@
               If you have any questions? Send us a messages and we will get back
               to you as soon as possible!
             </p>
-            <ul style="list-style: none" class="mb-5">
+            <ul style="list-style: none" class="mb-2">
               <li>One day collection</li>
               <li>Submit solution about 3-5 days</li>
               <li>Reply and Deal</li>
@@ -1001,8 +992,8 @@
             </ul>
           </div>
         </div>
-        <div class="row gx-4 gx-lg-5 justify-content-center mb-5 my-5">
-          <div class="col-lg-3 text-center mb-5 mb-lg-0">
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-2 my-2">
+          <div class="col-lg-3 text-center mb-2">
             <a href="https://wa.me/+971503653363"
               ><img
                 src="./assets/icons8-whatsapp-240.svg"
@@ -1012,7 +1003,7 @@
             </a>
             <div>Mobile: +971503653363</div>
           </div>
-          <div class="col-lg-3 text-center mb-5 mb-lg-0">
+          <div class="col-lg-3 text-center mb-2">
             <a href="https://wa.me/+96899261990"
               ><img
                 src="./assets/icons8-whatsapp-240.svg"
@@ -1023,7 +1014,7 @@
 
             <div>Tel: +96899261990</div>
           </div>
-          <div class="col-lg-3 text-center mb-5 mb-lg-0">
+          <div class="col-lg-3 text-center mb-2">
             <img src="./assets/icons8-gmail.svg" width="40%" height="40%" />
             <div>
               Email:
@@ -1035,7 +1026,7 @@
               >
             </div>
           </div>
-          <div class="col-lg-3 text-center mb-5 mb-lg-0">
+          <div class="col-lg-3 text-center mb-2">
             <img src="./assets/icons8-gmail.svg" width="40%" height="40%" />
             <div>
               Email:
@@ -1048,7 +1039,6 @@
             </div>
           </div>
         </div>
-        <div class="row gx-4 gx-lg-5 text-center"></div>
       </div>
     </section>
     <button onclick="topFunction()" id="myBtn" title="Go to top">
@@ -1117,20 +1107,15 @@
         // + all options available in i18next
       });
     </script>
-    <!-- <script>
-      window.i18nextify.init(
-        i18next.dir('ar')
-      );
-    </script> -->
+  
     <script>
       window.i18nextify.i18next.on("languageChanged", function (c) {
-        // console.log(c, "..changed");
-        // window.i18nextify.forceRerender();
-        // x =  i18nextify.i18next.dir(c);
+       
         if (c == "ar") {
-          document.body.style.direction = "rtl";
+          document.getElementById('page-direction').style.direction = "rtl";
         }
       });
     </script>
+    </div>
   </body>
 </html>
